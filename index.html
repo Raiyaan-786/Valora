@@ -18,7 +18,8 @@
                     <div class="left-content">
                         <h1><a href="">VALORA</a></h1>
                     </div>
-                    <div class="right-content">
+                    <div class="right-content" id="rightContent">
+                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                         <ul>
                             <li><a href="">HOME</a></li>
                             <li><a href="">ABOUT</a></li>
@@ -29,6 +30,7 @@
                             <li><a href="">CONTACT</a></li>
                         </ul>
                     </div>
+                    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
                 </div>    
             </div>
         </nav>
@@ -47,7 +49,7 @@
             <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facere.</i> </p>
             <hr>
         </div>
-        <div class="lower-row">
+        <div class="lower-row about-us-full">
             <div class="about-us-content">
                 <h1>Plan Your Destination With Us</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, velit! Rerum, blanditiis id tempora consequuntur, recusandae sunt tenetur voluptatum rem nesciunt consequatur quae praesentium numquam dolor quos hic. Doloremque, voluptatum! 
@@ -131,20 +133,19 @@
             <hr>
         </div>
         <div class="testimonial-box">
-            <div class="testimonial-content" >
+            <div class="testimonial-content test1" >
                 <p><i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora deleniti molestiae minus qui doloremque repudiandae perferendis officia ea fugit ullam, doloribus nostrum asper!</i></p>
                 <div class="testimonial-name">
                     <h3>KAUSHAL KISHORE</h3>
                 </div>
             </div>
-            <div class="testimonial-content" >
+            <div class="testimonial-content test2" >
                 <p><i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora deleniti molestiae minus qui doloremque repudiandae perferendis officia ea fugit ullam. ipsum dolor sit amet </i></p>
                 <div class="testimonial-name">
                     <h3>MD SOHAIL AKHTAR</h3>
                 </div>
             </div>
-            <div class="testimonial-content"
-            id="testimonial3">
+            <div class="testimonial-content test3">
                 <p><i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora deleniti molestiae minus qui doloremque repudiandae perferendis officia ea fugit ullam, doloribus nostrum asperiores</i></p>
                 <div class="testimonial-name">
                     <h3>INZAMAMUL HAQUE</h3>
@@ -320,6 +321,14 @@
         <a href="">GOOGLE+</a>
         <p>&#169; 2022 <a href="">VALORA</a> LANDING  PAGE, REPLICA OF KRUNCH PAGE , MADE BY<a href="">RAIYAAN</a></p>
     </section>
-
+    <script>
+        var rightContent = document.getElementById("rightContent") ;
+        function showMenu(){
+            rightContent.style.right = "0" ;
+        }
+        function hideMenu(){
+            rightContent.style.right = "-200px" ;
+        }
+    </script>
 </body>
 </html>

@@ -96,6 +96,50 @@
 .btn1:hover{
     background: rgb(86, 86, 234);
 }
+nav .fa-solid{
+    display: none;
+}
+@media(max-width: 600px){
+    .left-content h1{
+        font-size: 23px;
+        padding: 30px 10px;
+    }
+    .text h1{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .text p{
+        font-size: 12px;
+        padding: 20px 0;
+    }
+    .right-content ul li{
+        display: block ;
+    }
+    .right-content{
+        position: fixed;
+        background: #000;
+        height: 100vh;
+        width: 300px;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .right-content ul{
+        padding: 30px;
+    }
+    .btn1{
+        margin-bottom: 12px;
+    }
+}
 .about-us{
     height: 100vh;
     width: 90%;
@@ -148,7 +192,38 @@
     line-height: 25px;
     font-size: 18px;
 }
-
+@media(max-width: 600px){
+    .about-us{
+        padding-top: 60px;
+    } 
+    .upper-row h1{
+        font-size: 22px;   
+    }
+    .lower-row{
+        display: block;
+    }
+    .upper-row p{
+        font-size: 12px;
+    }
+    .about-us-content{
+        padding: 10px 2px;
+    }
+    .about-us-content h1{
+        font-size: 22px;
+        padding: 0px;
+    }
+    .about-us-content p{
+        padding: 8px 0;
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 300;
+    }
+    .lower-row{
+        padding-bottom: 20px;
+        padding-top: 5px;
+    }
+}
+ /* Explore Section */
 .explore{
     height: 100vh;
     width: 100%;
@@ -221,6 +296,25 @@
 .upper-row .btn2:hover{
     color: #fff;
 }
+@media(max-width: 600px){
+    .explore { 
+        overflow: none;
+        height: 275vh;
+    }
+    .explore hr{
+        margin-bottom: 50px;
+    } 
+    .lower-container {
+        display: block;
+    }
+    .upper-container{
+        display: block;
+    }
+    .explore-end p{
+        font-size: 18px;
+    }
+
+}
 .testimonials{
     height: 60vh;
     width: 100%;
@@ -269,6 +363,25 @@
     font-weight: 500;
     color: rgb(77, 122, 237);
 } 
+@media(max-width: 600px){
+    .testimonials{
+        margin-top: 500px;
+        height: 150vh;
+    }
+    .testimonial-box{
+        display: block;
+    }
+    .testimonial-content{
+        margin: 30px;
+    }
+    .testimonial-content p{
+        font-size: 12px;
+    }
+    .testimonial-name h3{
+        font-size: 18px;
+    }
+
+}
 .services{
     height: 100vh;
     width: 90%;
@@ -307,8 +420,35 @@
     margin: 0 0 5% 0;
     font-weight: 300;
 }
+@media(max-width: 600px){
+    .services{
+        height: 190vh;
+        padding-top: 50px;
+    }
+    .services-section{
+        display: flex;
+        flex-direction: column;
+        margin: -25px -10px;
+        
+    }
+    .service-content{
+        scale: 0.7;
+        border: 1px solid #8b8888;
+        margin: -12px;
+        padding: 10px 10px;
+        border-radius: 8px;;
+    }
+    .service-content:hover{
+        background: black;
+        color: #fff;
+    }
+    .service-content p{
+        font-size: 13px;
+    }
+}
 .team{
     width: 100%;
+    height: 190vh;
     margin: auto;
     text-align: center;
     padding-top: 120px;
@@ -330,6 +470,7 @@
     width: 100%;
     display: block;
     height: 450px;
+    border-radius: 8px;
 }
 .icon{
     margin: 2%;
@@ -435,8 +576,26 @@
     background: #000;
     border: 1px solid #fff;
 }
+@media(max-width: 600px){
+    .team{
+        height: 360vh;
+        padding-top: 80px;
+    }
+    .team-section{
+        display: block;
+        margin: 5px 10px;
+        
+    }
+    .team-content{
+        margin: 10px 10px;
+    }
+    .team-area{
+        display: none;
+    }
+}
 .news{
     width: 90%;
+    height: 120vh;
     margin: 10px auto 30px auto ;
     text-align: center;
     padding-top: 20px;
@@ -488,6 +647,24 @@
 .news .btn1:hover{
     color: #fff;
 }
+@media(max-width: 600px){
+    .news{
+        height: 150vh;
+    }
+    .news-box{
+        margin: 50px 30px;
+        padding: 40px 30px;
+    }
+    .news-section{
+       display: flex;
+    }
+    .news-box p{
+        font-size: 15px;
+        
+    }
+        
+}
+
 .contact{
     width: 90%;
     margin: 10px auto 30px auto ;
